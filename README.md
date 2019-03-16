@@ -21,11 +21,11 @@
 
 ## Running
 
-First of all, make sure you have ruby and sass gem installed. Then, clone the repository, install all dependencies, build and serve the project.
+Make sure you have ruby and sass gem installed. Then, clone the repository, install all dependencies, build and serve the project.
 
 ```bash
 > gem install sass
-> git clone https://github.com/eisman/neo4jd3.git
+> git clone https://github.com/cwhd/neo4jd3.git
 > npm install
 > gulp
 ```
@@ -238,14 +238,6 @@ var neo4jd3 = new Neo4jd3('#neo4jd3', {
     zoomFit: true
 });
 ```
-
-## What's coming?
-
-* Toolbar.
-* More than one relationship between two nodes.
-* Markers.
-* Performance optimization.
-* Testing.
 
 ## Copyright and license
 

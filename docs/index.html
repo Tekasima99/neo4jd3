@@ -22,6 +22,7 @@
         <div id="neo4jd3"></div>
 
         <!-- Scripts -->
+        <script src="js/saveSvgAsPng.js"></script>
         <script src="js/d3.min.js"></script>
         <script src="js/neo4jd3.js?v=0.0.1"></script>
         <script type="text/javascript">
@@ -94,7 +95,13 @@
                     },
                     zoomFit: true
                 });
+                setTimeout(3000);
+                saveSvgAsPng(document.getElementById("neo4jd3-graph"), "diagram.png");
+
             }
+
+            //TODO now try to export this as an image: https://github.com/thibaudcolas/export-svg-chart
+            //TODO then I think you can save the node bufffer to storage??
 
             window.onload = init;
         </script>

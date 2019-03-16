@@ -532,7 +532,7 @@ function Neo4jD3(_selector, _options) {
 
     function initSimulation() {
         var simulation = d3.forceSimulation()
-//                           .velocityDecay(0.8)
+                           //.velocityDecay(.3)
 //                           .force('x', d3.force().strength(0.002))
 //                           .force('y', d3.force().strength(0.002))
                            .force('collide', d3.forceCollide().radius(function(d) {
@@ -551,6 +551,8 @@ function Neo4jD3(_selector, _options) {
                                    justLoaded = true;
                                    zoomFit(2);
                                }
+                               //TODO update an element on the page when this is done...nightmare will use that to 
+                               // know when to take the screenshot
                            });
 
         return simulation;
